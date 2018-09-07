@@ -7,6 +7,6 @@ class Test053(unittest.TestCase):
 
     def test_max_subarray(self):
         expected = [6, 99, -8]
-        for entry, x in enumerate(maximum_subarray.myinput):
-            self.assertEqual(maximum_subarray.leetSolve(x),
+        for entry, input in enumerate(maximum_subarray.myinput):
+            self.assertEqual(maximum_subarray.leetSolve(input),
                              expected[entry])

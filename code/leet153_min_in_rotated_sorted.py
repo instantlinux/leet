@@ -43,5 +43,5 @@ def leetSolve(items):
     return firstValue
 
 
-for entry, x in enumerate(myinput):
-    print "list %d: %s" % (entry + 1, leetSolve(x))
+for entry, input in enumerate(myinput):
+    print "list %d: %s" % (entry + 1, leetSolve(input))

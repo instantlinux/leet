@@ -7,6 +7,6 @@ class Test217(unittest.TestCase):
 
     def test_contains_duplicate(self):
         expected = [True, False, True]
-        for entry, x in enumerate(contains_duplicate.myinput):
-            self.assertEqual(contains_duplicate.leetSolve(x),
+        for entry, input in enumerate(contains_duplicate.myinput):
+            self.assertEqual(contains_duplicate.leetSolve(input),
                              expected[entry])

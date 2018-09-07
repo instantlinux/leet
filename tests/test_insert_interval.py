@@ -10,7 +10,7 @@ class Test057(unittest.TestCase):
             [[1, 5], [6, 9]],
             [[1, 2], [3, 10], [12, 16]]]
 
-        for entry, x in enumerate(insert_interval.myinput):
-            self.assertEqual(insert_interval.leetSolve(x['intervals'],
-                                                       x['newInterval']),
+        for entry, input in enumerate(insert_interval.myinput):
+            self.assertEqual(insert_interval.leetSolve(input['intervals'],
+                                                       input['newInterval']),
                              expected[entry])

@@ -35,6 +35,7 @@ def leetSolve(s_haystack, t_hay):
     for i in range(len(s_haystack)):
         match_map[t_hay.find(s_haystack[i])] = i
 
+    """ TODO
     for i in range(len(s_haystack)):
         if matching[i]:
             for j in t_hay:
@@ -44,7 +45,8 @@ def leetSolve(s_haystack, t_hay):
             sum = _sumRange(items, (i, j))
             maxResult = max(sum, maxResult)
     return maxResult
+    """
 
 
-for entry, x in enumerate(myinput):
-    print "list %d: %s" % (entry + 1, leetSolve(x['s'], x['t']))
+for entry, input in enumerate(myinput):
+    print "list %d: %s" % (entry + 1, leetSolve(input['s'], input['t']))

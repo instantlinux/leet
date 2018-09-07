@@ -61,5 +61,5 @@ class Leet303(object):
 
 
 instance = Leet303(myinput1)
-for entry, x in enumerate(myinput2):
-    print "list %d: %s" % (entry + 1, instance.leetSolveClever(x))
+for entry, input in enumerate(myinput2):
+    print "list %d: %s" % (entry + 1, instance.leetSolveClever(input))

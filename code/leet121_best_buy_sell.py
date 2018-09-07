@@ -58,5 +58,5 @@ def leetSolveClever(prices):
     return profit
 
 
-for entry, x in enumerate(myinput):
-    print "list %d: %s" % (entry + 1, leetSolveClever(x))
+for entry, input in enumerate(myinput):
+    print "list %d: %s" % (entry + 1, leetSolveClever(input))

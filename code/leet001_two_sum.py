@@ -35,5 +35,5 @@ def leetSolve(items, target):
     raise ValueError('No solution found')
 
 
-for entry, x in enumerate(myinput):
-    print "list %d: %s" % (entry + 1, leetSolve(x[0], x[1]))
+for entry, input in enumerate(myinput):
+    print "list %d: %s" % (entry + 1, leetSolve(input[0], input[1]))

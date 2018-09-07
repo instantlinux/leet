@@ -36,5 +36,5 @@ def leetSolve(items):
     return False
 
 
-for entry, x in enumerate(myinput):
-    print "list %d: %s" % (entry + 1, leetSolve(x))
+for entry, input in enumerate(myinput):
+    print "list %d: %s" % (entry + 1, leetSolve(input))

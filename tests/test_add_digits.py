@@ -8,5 +8,5 @@ class Test258(unittest.TestCase):
     def test_add_digits(self):
         expected = [2]
 
-        for entry, x in enumerate(add_digits.myinput):
-            self.assertEqual(add_digits.leetSolve(x), expected[entry])
+        for entry, input in enumerate(add_digits.myinput):
+            self.assertEqual(add_digits.leetSolve(input), expected[entry])

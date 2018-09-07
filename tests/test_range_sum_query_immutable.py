@@ -12,11 +12,12 @@ class Test303(unittest.TestCase):
 
     def test_range_sum_query_immutable(self):
 
-        for entry, x in enumerate(range_sum_query_immutable.myinput2):
-            self.assertEqual(self.instance.leetSolve(x), self.expected[entry])
+        for entry, input in enumerate(range_sum_query_immutable.myinput2):
+            self.assertEqual(self.instance.leetSolve(input),
+                             self.expected[entry])
 
     def test_range_sum_query_immutable_clever(self):
 
-        for entry, x in enumerate(range_sum_query_immutable.myinput2):
-            self.assertEqual(self.instance.leetSolveClever(x),
+        for entry, input in enumerate(range_sum_query_immutable.myinput2):
+            self.assertEqual(self.instance.leetSolveClever(input),
                              self.expected[entry])

@@ -44,6 +44,6 @@ def leetSolve(intervals, newInterval):
     return result
 
 
-for entry, x in enumerate(myinput):
-    print "list %d: %s" % (entry + 1, leetSolve(x['intervals'],
-                                                x['newInterval']))
+for entry, input in enumerate(myinput):
+    print "list %d: %s" % (entry + 1, leetSolve(input['intervals'],
+                                                input['newInterval']))

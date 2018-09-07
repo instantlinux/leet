@@ -9,8 +9,8 @@ class Test001(unittest.TestCase):
         expected = [
             (0, 1),
             (1, 4)]
-        for entry, x in enumerate(two_sum.myinput):
-            self.assertEqual(two_sum.leetSolve(x[0], x[1]),
+        for entry, input in enumerate(two_sum.myinput):
+            self.assertEqual(two_sum.leetSolve(input[0], input[1]),
                              expected[entry])
 
     def test_two_sum_exception(self):

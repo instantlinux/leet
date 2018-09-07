@@ -73,4 +73,5 @@ def leetSolveClever(items):
     return result
 
 
-print leetSolveClever(myinput)
+for entry, input in enumerate(myinput):
+    print "list %d: %s" % (entry + 1, leetSolveClever(input))
