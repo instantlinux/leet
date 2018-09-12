@@ -47,7 +47,7 @@ Notes:
 """
 
 myinput = [
-    [ (2, 9, 10), (3, 7, 15), (5, 12, 12), (15, 20, 10), (19, 24, 8) ]]
+    [(2, 9, 10), (3, 7, 15), (5, 12, 12), (15, 20, 10), (19, 24, 8)]]
 
 
 def leetSolve(buildings):
@@ -72,7 +72,7 @@ def leetSolve(buildings):
             results.append((position, level))
             current = level
     if (current != 0):
-        results.append ((position + 1, 0))
+        results.append((position + 1, 0))
     return results
 
 

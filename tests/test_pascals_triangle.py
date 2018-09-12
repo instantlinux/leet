@@ -13,4 +13,4 @@ class Test118(unittest.TestCase):
 
         for entry, input in enumerate(pascals_triangle.myinput):
             self.assertEqual(pascals_triangle.leetSolve(input),
-                                                        expected[entry])
+                             expected[entry])
