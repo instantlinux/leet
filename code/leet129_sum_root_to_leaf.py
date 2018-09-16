@@ -1,15 +1,14 @@
-"""binary_tree_paths (257)
+"""sum_root_to_leaf (129)
 
 Description:
-  See https://leetcode.com/problems/binary-tree-paths/description/
+  See https://leetcode.com/problems/sum-root-to-leaf-numbers/description/
 """
 
 from lib.binarytree import BinaryTree
 
 myinput = [
-    [1, 2, 5, 3, 6, 10, 13, 8],
-    [1000],
-    []]
+    [1, 2, 3],
+    [4, 9, 0, 5, 1]]
 
 
 def leetSolve(nums):
@@ -23,21 +22,23 @@ def leetSolve(nums):
         list: list of root-to-leaf path strings
     """
 
-    result = []
+    result = 0
+    # TODO: balanced tree instead of search (sorted) tree
     tree = BinaryTree()
     for item in nums:
         tree.add(item)
     for item in tree:
         if (not item.left and not item.right):
-            rootPath = []
+            sum = 0
+            magnitude = 1
             node = item
             while (node):
-                rootPath.append(node.val)
+                sum = sum + node.val * magnitude
+                magnitude *= 10
                 node = node.parent
-            result.append('->'.join([str(item)
-                                     for item in reversed(rootPath)]))
+            result += sum
     return result
 
 
 for entry, input in enumerate(myinput):
-    print "list %d: %s" % (entry + 1, leetSolve(input))
+    print 'case %d: %s' % (entry + 1, leetSolve(input))
